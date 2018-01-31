@@ -1,0 +1,26 @@
+package fi.haagahelia.ThymeleafHello.web;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.ui.Model;
+
+@Controller
+public class HelloController {
+	
+	
+
+	@RequestMapping(value="/hello", method=RequestMethod.GET)
+	public String students(Model model){
+		List<String> studentlist = new ArrayList<String>();
+		studentlist.add("Jack Jackson");
+		studentlist.add("John Johnson");
+		studentlist.add("Mary Martin");
+
+		model.addAttribute("students", studentlist);
+		return "studentlist";
+	}
+}

@@ -1,0 +1,42 @@
+
+public class TimePeriod {
+
+	private int hours;
+	private int minutes;
+
+	public TimePeriod() {
+
+	}
+
+	public void addHours(int hoursToAdd) {
+		
+		this.hours = hoursToAdd;
+		
+		if (hours > 0) {
+			
+			for (int i = 0; i < hours; i++) {
+				
+				hoursToAdd = hours++;
+		
+		} 
+		}
+	}
+
+	public void addMinutes(int minutesToAdd) {
+
+		this.minutes = minutesToAdd;
+		
+		if (minutes > 0 && minutes < 60) {
+			
+			for (int i = 0; i < minutes; i++) {
+				
+				minutesToAdd = minutes++;
+			}
+		}
+	}
+	
+	public String toString() {
+		
+		return hours + " h " + minutes + " min";
+	}
+}

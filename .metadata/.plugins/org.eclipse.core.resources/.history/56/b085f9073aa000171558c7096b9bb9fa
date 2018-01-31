@@ -1,0 +1,23 @@
+
+public class TimePeriod {
+
+	private int hours;
+	private int minutes;
+
+	public TimePeriod() {
+
+		System.out.print(hours + " h " + minutes + " min");
+	}
+
+	public void addHours(int hoursToAdd) {
+
+		int startHours = 0;
+		hoursToAdd = startHours + hours;
+	}
+
+	public void addMinutes(int minutesToAdd) {
+
+		int startMinutes = 0;
+		minutesToAdd = startMinutes + minutes;
+	}
+}

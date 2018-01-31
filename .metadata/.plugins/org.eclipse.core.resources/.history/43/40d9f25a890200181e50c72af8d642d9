@@ -1,0 +1,5 @@
+package fi.haagahelia.ThymeleafHello.web;
+
+public class HelloController {
+
+}

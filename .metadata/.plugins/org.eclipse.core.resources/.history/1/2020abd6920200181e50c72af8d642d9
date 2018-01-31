@@ -1,0 +1,5 @@
+package fi.haagahelia.ThymeFriendList.web;
+
+public class ThymeController {
+
+}
